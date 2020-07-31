@@ -12,7 +12,8 @@ SHI, X.P., WU, Y.H. & RAO, C.R. (2018). Consistent and powerful non-Euclidean gr
 
 SHI, X.P., CHEN, M.Q., DONG, Y.C. & RAO, C.R. (2020). Exploring the space-time pattern of log-transformed infectious count of COVID-19: a clustering-segmented autoregressive sigmoid model.
 
-The data support in GraphCpClust:
+# Data support
+
 Lihoreau M, Chittka L, Raine NE (2016) Monitoring flower visitation networks and interactions between pairs of bumble bees in a large outdoor flight cage. PLoS One 11:e0150844.
 
 Ciccone M, Gutwein M, Gunsalus KC, Geiger D (2014) Label free cell-tracking and division detection based on 2D time-lapse images for lineage analysis of early embryo development. Comput Biol Med 51:24-34. http://celltracking.bio.nyu.edu/
@@ -26,13 +27,8 @@ You can install the released version of GraphCpClust from [CRAN](https://CRAN.R-
 ``` r
 install.packages("GraphCpClust")
 ```
-
-## Example
-
-This is a basic example which shows you how to solve a common problem:
-
-``` r
-library(GraphCpClust)
-## basic example code
+```r
+devtools::install_github("Meiqian-Chen/GraphCpClust")
 ```
+
 
