@@ -1,0 +1,27 @@
+Package: GraphCpClust
+Type: Package
+Title: This package is used to implement the change point estimation method and graph-based clustering method introduced in the three papers, and provide related data analysis.
+Version: 1.0
+Date: 2020-07-30
+Authors@R: c(person("Meiqian","Chen",email="mqchen@stu.scu.edu.cn", role=c("aut","cre")),person("Xiaoping","Shi",email="xshi@tru.ca",role="aut"),person("Hao","Li",email="lihaoahu@foxmail.com",role="ctb"))
+Description: This package is the data and code support for three papers: Shi, Wu and Rao (2017); Shi, Wu and Rao (2018); Shi, Chen, Dong and Rao (2020). It provides change points estimation methods, graph-based clustering method , and related data analysis in these three papers.
+License: Apache License (>= 2.0)
+Depends: 
+    R (>= 3.5.0),
+Imports: 
+    Rcpp,
+    RcppArmadillo,
+    ggplot2,
+    igraph,
+    stringr,
+    grid,
+    fpc,
+    factoextra,
+    mclust,
+    dplyr,
+    gridExtra,
+    tidyr
+LinkingTo: 
+    Rcpp,
+    RcppArmadillo
+RoxygenNote: 7.1.1
