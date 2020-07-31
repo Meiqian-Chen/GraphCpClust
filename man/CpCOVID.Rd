@@ -7,9 +7,7 @@
 CpCOVID(start,end,data)
 }
 \arguments{
-\item{start}{start point}
-
-\item{end}{end point}
+\item{start, end}{starting point, ending point}
 
 \item{data}{input data}
 }
@@ -17,7 +15,7 @@ CpCOVID(start,end,data)
 the change points estimation
 }
 \description{
-Given the true start point, end point, and the shortest Hamiltonian path, this function returns the change points estimation introduced in Shi, Chen, Dong and Rao (2020)
+Given the starting point, ending point, and the shortest Hamiltonian path, this function returns the change points estimation introduced in Shi, Chen, Dong and Rao (2020)
 }
 \examples{
 

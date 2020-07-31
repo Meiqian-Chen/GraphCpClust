@@ -1,6 +1,6 @@
 #' Basic description
 #'
-#' @description  This fuction is the comparisons of graph-based clustering method and model-based clustering method introduced in Shi, Chen, Dong and Rao (2020)
+#' @description  This fuction is used to compare graph-based clustering method and model-based clustering method introduced in Shi, Chen, Dong and Rao (2020)
 #' @usage SimulationPlot()
 #' @examples
 #' SimulationPlot()
@@ -42,12 +42,12 @@ SimulationPlot<-function(){
 
   fig3 <- function(...){
   	D=c(150);sigma=c(1:10)*0.1;loop.time=100;c(1,10,15)
-  	m1=readRDS(system.file("extdata/REg.rds",package="PathCpClust"))
-		t1=readRDS(system.file("extdata/REm.rds",package="PathCpClust")) 
-		m2=readRDS(system.file("extdata/REg2.rds",package="PathCpClust"))
-		t2=readRDS(system.file("extdata/REm2.rds",package="PathCpClust")) 
-		m3=readRDS(system.file("extdata/REg3.rds",package="PathCpClust"))
-		t3=readRDS(system.file("extdata/REm3.rds",package="PathCpClust")) 
+  	m1=readRDS(system.file("extdata/REg.rds",package="GraphCpClust"))
+		t1=readRDS(system.file("extdata/REm.rds",package="GraphCpClust")) 
+		m2=readRDS(system.file("extdata/REg2.rds",package="GraphCpClust"))
+		t2=readRDS(system.file("extdata/REm2.rds",package="GraphCpClust")) 
+		m3=readRDS(system.file("extdata/REg3.rds",package="GraphCpClust"))
+		t3=readRDS(system.file("extdata/REm3.rds",package="GraphCpClust")) 
 		##########end of simulation3
 
 		#Figure 3

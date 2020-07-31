@@ -33,16 +33,18 @@ SHI, X.P., CHEN, M.Q., DONG, Y.C. & RAO, C.R. (2020). Exploring the space-time p
 Lihoreau M, Chittka L, Raine NE (2016) Monitoring flower visitation networks and interactions between pairs of bumble bees in a large outdoor flight cage. PLoS One 11:e0150844.
 
 Ciccone M, Gutwein M, Gunsalus KC, Geiger D (2014) Label free cell-tracking and division detection based on 2D time-lapse images for lineage analysis of early embryo development. Comput Biol Med 51:24-34. http://celltracking.bio.nyu.edu/
+
+Wuhan-2019-nCoV: https://github.com/canghailan/Wuhan-2019-nCoV/
 }
 
 
 \keyword{cluster  changepoint}
 \section{Explanation}{
 library(GraphCpClust)\cr\cr
-help(CpBeeCell) #View the change points estimation method in Shi, Wu and Rao (2017) and Shi, Wu and Rao (2018).\cr\cr
-example("CpBeeCell") # Run the example of data analysis in Shi, Wu and Rao (2017) and Shi, Wu and Rao (2018).\cr\cr
-help(PathClust) # The clustering method of PathClust in Shi, Chen, Dong and Rao (2020)\cr\cr
-example("PathClust") #Some examples of the PathClust clustering method that include the clustering results in Shi, Chen, Dong and Rao (2020)\cr\cr
-SimulationPlot() #the Comparisons of PathClust clustering method and model-based clustering method.\cr\cr
-example("CpCOVID") #The data example of change points estimation in Shi, Chen, Dong and Rao (2020).\cr\cr
+help(CpBeeCell) #View the change points estimation method introduced in Shi, Wu and Rao (2017) and Shi, Wu and Rao (2018)\cr\cr
+example("CpBeeCell") # The examples of change points estimation introduced in Shi, Wu and Rao (2017) and Shi, Wu and Rao (2018)\cr\cr
+help(PathClust) # The graph-based clustering method introduced in Shi, Chen, Dong and Rao (2020)\cr\cr
+example("PathClust") #Some examples of the graph-based clustering method introduced in Shi, Chen, Dong and Rao (2020)\cr\cr
+SimulationPlot() #the Comparisons of graph-based clustering method and model-based clustering method\cr\cr
+example("CpCOVID") #The examples of change points estimation introduced in Shi, Chen, Dong and Rao (2020)\cr\cr
 }

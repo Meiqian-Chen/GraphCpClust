@@ -7,7 +7,7 @@
 SimulationPlot()
 }
 \description{
-This fuction is the comparisons of graph-based clustering method and model-based clustering method introduced in Shi, Chen, Dong and Rao (2020)
+This fuction is used to compare graph-based clustering method and model-based clustering method introduced in Shi, Chen, Dong and Rao (2020)
 }
 \examples{
 SimulationPlot()

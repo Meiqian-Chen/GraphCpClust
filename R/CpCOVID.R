@@ -1,9 +1,8 @@
 #' Basic description
 #'
-#' @description Given the true start point, end point, and the shortest Hamiltonian path, this function returns the change points estimation introduced in Shi, Chen, Dong and Rao (2020)
+#' @description Given the starting point, ending point, and the shortest Hamiltonian path, this function returns the change points estimation introduced in Shi, Chen, Dong and Rao (2020)
 #' @usage CpCOVID(start,end,data)
-#' @param start start point
-#' @param end end point
+#' @param start,end starting point, ending point
 #' @param data input data 
 #' @return the change points estimation
 #' @examples

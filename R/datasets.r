@@ -49,3 +49,26 @@ NULL
 #' @docType data
 NULL
 
+#' @name data_clust
+#' @title data_clust
+#' @description The clustering result of provinces/regions in China introduced in Shi, Chen, Dong and Rao (2020).
+#' @docType data
+NULL
+
+#' @name data_clust_C
+#' @title data_clust_C
+#' @description The clustering result of 33 selected countries in the rest of world introduced in Shi, Chen, Dong and Rao (2020).
+#' @docType data
+NULL
+
+#' @name final
+#' @title final
+#' @description The change points eatimation of each cluster of provinces/regions in China introduced in Shi, Chen, Dong and Rao (2020).
+#' @docType data
+NULL
+
+#' @name final_C
+#' @title final_C
+#' @description The change points eatimation of each cluster of 33 selected countries in the rest of world introduced in Shi, Chen, Dong and Rao (2020).
+#' @docType data
+NULL
