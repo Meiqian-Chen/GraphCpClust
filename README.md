@@ -27,9 +27,11 @@ You can install the released version of GraphCpClust from [CRAN](https://CRAN.R-
 ``` r
 install.packages("GraphCpClust")
 ```
-Or using the second method of installation, which may be slower:
+Or use one of the following two methods of installation, which may be slower：
 ```r
 devtools::install_github("Meiqian-Chen/GraphCpClust")
 ```
-
+```r
+install.packages("https://github.com/Meiqian-Chen/GraphCpClust/releases/download/v1.0/GraphCpClust_1.0.tar.gz",repos = NULL,type="source")
+```
 
