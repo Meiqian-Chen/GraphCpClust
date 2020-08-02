@@ -12,13 +12,25 @@ SHI, X.P., WU, Y.H. & RAO, C.R. (2018). Consistent and powerful non-Euclidean gr
 
 SHI, X.P., CHEN, M.Q., DONG, Y.C. & RAO, C.R. (2020). Exploring the space-time pattern of log-transformed infectious count of COVID-19: a clustering-segmented autoregressive sigmoid model.
 
+# Package authors
+
+Maintainer: Meiqian Chen (mqchen@stu.scu.edu.cn)
+
+    Meiqian Chen
+    
+    Xiaoping shi
+    
+    Hao Li
+
 # Data support
 
-Lihoreau M, Chittka L, Raine NE (2016) Monitoring flower visitation networks and interactions between pairs of bumble bees in a large outdoor flight cage. PLoS One 11:e0150844.
+For the cell image data used in Shi, Wu and Rao (2017), Xiaoping Shi was authorized by Dr. M. Cicconet (Ciccone et al., 2014). And for the video data used in Shi, Wu and Rao (2018), Xiaoping Shi was authorized by Dr. Mathieu Lihoreau (Lihoreau et al., 2014).
 
 Ciccone M, Gutwein M, Gunsalus KC, Geiger D (2014) Label free cell-tracking and division detection based on 2D time-lapse images for lineage analysis of early embryo development. Comput Biol Med 51:24-34. http://celltracking.bio.nyu.edu/
 
-Wuhan-2019-nCoV: https://github.com/canghailan/Wuhan-2019-nCoV/
+Lihoreau M, Chittka L, Raine NE (2016) Monitoring flower visitation networks and interactions between pairs of bumble bees in a large outdoor flight cage. PLoS One 11:e0150844.
+
+The data used in Shi, Chen, Dong, Wu and Rao (2020): Wuhan-2019-nCoV (https://github.com/canghailan/Wuhan-2019-nCoV/)
 
 ## Installation
 
