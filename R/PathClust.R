@@ -196,7 +196,7 @@ PathClust=function(data){
   }
   n.p=dim(Data_confirmed)[1]
   n.c_1 = length(re.c$groups)
-
+  
   center=c(0,0);radius=10;
   
   plot(0,xlim=c(-1.5*radius,2*radius),ylim=2*c(-radius,radius),
@@ -207,28 +207,59 @@ PathClust=function(data){
     points(radius*cos(theta[i]),radius*sin(theta[i]),type="l")
   
   re.c$path
-  COL=rainbow(length(re.c$group))
-  # NAME <- read.csv("legend.csv",header = FALSE)
-  
-  L=NULL
-  for(t1 in 1:n.c)   L=c(L,length(re.c$groups[[t1]]))
-  L=unique(L)
-  L=sort(L)
-  PL=seq(0.05,0.15,length.out=length(L))
-  ALL=matrix(NA,n.p,4)
-  ALL[,1]=c(1:n.p)
-  for(t1 in 1:n.c){
-    groups_res = length(re.c$groups[[t1]])
-    for(t2 in 1:groups_res){
-      temp=which(ALL[,1]==re.c$groups[[t1]][t2])
-      ALL[temp,2]=COL[t1]
-      # temp.n=which(NAME[,1]==IOS_name[re.c$groups[[t1]][t2]])
-      # ALL[temp,3]=as.vector(NAME[temp.n,3])
-      ALL[temp,3]=IOS_name[temp]
-      temp.L=which(L==length(re.c$groups[[t1]]))
-      ALL[temp,4]=PL[temp.L]
+  COL_origin = c('#FF0000', '#FF1493', '#800080', '#0000FF', '#00FFFF', '#00FF7F', '#FFA500', '#FFFF00', '#778899')
+  if(n.c != 1){
+    COL = c()
+    for(i in 1:n.c){
+      COL = c(COL, COL_origin[i])
+    }
+  }else{
+    COL = c('#FF0000')
+  }
+  # COL=rainbow(length(re.c$group))
+  # COL=rainbow(n.c)
+  if(n.c == 1){
+    L=NULL
+    for(t1 in 1:n.c_1)   L=c(L,length(re.c$groups[[t1]]))
+    L=unique(L)
+    L=sort(L)
+    PL=seq(0.05,0.15,length.out=length(L))
+    ALL=matrix(NA,n.p,4)
+    ALL[,1]=c(1:n.p)
+    for(t1 in 1:n.c){
+      groups_res = length(re.c$groups)
+      for(t2 in 1:groups_res){  # groups_res
+        temp=which(ALL[,1]==re.c$groups[[t2]])
+        ALL[temp,2]=COL[t1]
+        # temp.n=which(NAME[,1]==IOS_name[re.c$groups[[t1]][t2]])
+        # ALL[temp,3]=as.vector(NAME[temp.n,3])
+        ALL[temp,3]=IOS_name[temp]
+        temp.L=which(L==n.c)
+        ALL[temp,4]=PL[temp.L]
+      }
+    }  
+  }else{
+    L=NULL
+    for(t1 in 1:n.c)   L=c(L,length(re.c$groups[[t1]]))
+    L=unique(L)
+    L=sort(L)
+    PL=seq(0.05,0.15,length.out=length(L))
+    ALL=matrix(NA,n.p,4)
+    ALL[,1]=c(1:n.p)
+    for(t1 in 1:n.c){
+      groups_res = length(re.c$groups[[t1]])
+      for(t2 in 1:groups_res){  # groups_res
+        temp=which(ALL[,1]==re.c$groups[[t1]][t2])
+        ALL[temp,2]=COL[t1]
+        # temp.n=which(NAME[,1]==IOS_name[re.c$groups[[t1]][t2]])
+        # ALL[temp,3]=as.vector(NAME[temp.n,3])
+        ALL[temp,3]=IOS_name[temp]
+        temp.L=which(L==length(re.c$groups[[t1]]))
+        ALL[temp,4]=PL[temp.L]
+      }
     }
   }
+  
   
   delta.theta=(length(theta)-n.p*10)/n.p
   
