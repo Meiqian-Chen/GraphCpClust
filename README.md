@@ -34,12 +34,8 @@ The data used in Shi, Chen, Dong, Wu and Rao (2020): Wuhan-2019-nCoV (https://gi
 
 ## Installation
 
-You can install the released version of GraphCpClust from [CRAN](https://CRAN.R-project.org) with:
+You can use one of the following two methods to install the released version of GraphCpClust:
 
-``` r
-install.packages("GraphCpClust")
-```
-Or use one of the following two methods of installation, which may be slower：
 ```r
 devtools::install_github("Meiqian-Chen/GraphCpClust")
 ```
