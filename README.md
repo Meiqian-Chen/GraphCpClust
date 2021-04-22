@@ -10,7 +10,7 @@ The goal of GraphCpClust is to implement the change point estimation method and 
 
     SHI, X.P., WU, Y.H. & RAO, C.R. (2018). Consistent and powerful non-Euclidean graph-based change-point test with applications to segmenting random interfered video data. Proc Natl Acad Sci 115, 5914-5919.
 
-    SHI, X.P., CHEN, M.Q., DONG, Y.C. & RAO, C.R. (2020). Exploring the space-time pattern of log-transformed infectious count of COVID-19: a clustering-segmented autoregressive sigmoid model.
+    SHI, X.P., CHEN, M.Q. & DONG, Y.C. (2021). Exploring the space-time pattern of log-transformed infectious count of COVID-19: a clustering-segmented autoregressive sigmoid model. arXiv. https://arxiv.org/abs/2102.13287
 
 # Package authors
 
@@ -30,7 +30,7 @@ Cicconet M, Gutwein M, Gunsalus KC, Geiger D (2014) Label free cell-tracking and
 
 Lihoreau M, Chittka L, Raine NE (2016) Monitoring flower visitation networks and interactions between pairs of bumble bees in a large outdoor flight cage. PLoS One 11:e0150844.
 
-The data used in Shi, Chen, Dong, Wu and Rao (2020): Wuhan-2019-nCoV (https://github.com/canghailan/Wuhan-2019-nCoV/)
+The data used in Shi, Chen & Dong(2021): Wuhan-2019-nCoV (https://github.com/canghailan/Wuhan-2019-nCoV/)
 
 ## Installation
 
