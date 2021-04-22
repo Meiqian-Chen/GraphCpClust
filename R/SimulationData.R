@@ -131,30 +131,26 @@ SimulationData<-function(){
       RE.g[r1,r2]=C1/loop.time;RE.m[r1,r2]=C2/loop.time
     }
   
-  # RE.g
-  # RE.m
-  
-
   saveRDS(RE.g, "REg.rds")
   saveRDS(RE.m, "REm.rds") 
   ##########end of simulation1
   
   
   ######simulation2
-  set.seed(1) 
+  set.seed(2) 
   #simulations for comparisons
-  D=c(150);sigma=c(1:10)*0.1;loop.time=100;
+  D=c(210);sigma=c(1:10)*0.1;loop.time=100;
   RE.g=RE.m=matrix(NA,length(D),length(sigma))
   for(r1 in 1:length(D))
     for(r2 in 1:length(sigma)){
       d=D[r1]
       s.e=sigma[r2]
-      C1=C2=0;
+      C1=C2=0; 
       for(loop in 1:loop.time){
         Data=NULL
         for(i in 1:5) Data=rbind(Data,0+10*pnorm(-4+0.05*c(1:d))+rnorm(d,0,s.e))#
-        for(i in 1:20) Data=rbind(Data,c(rep(0,50),20*pnorm(-3+0.03*c(1:(d-50)))+rnorm(d-50,0,s.e)))
-        for(i in 1:30) Data=rbind(Data,c(rep(0,100),5*pnorm(-2+0.07*c(1:(d-100)))+rnorm(d-100,0,s.e)))
+        for(i in 1:20) Data=rbind(Data,c(rep(0,70),20*pnorm(-3+0.03*c(1:(d-70)))+rnorm(d-70,0,s.e)))
+        for(i in 1:30) Data=rbind(Data,c(rep(0,140),5*pnorm(-2+0.07*c(1:(d-140)))+rnorm(d-140,0,s.e)))
         sample.loc=sample(dim(Data)[1])
         Data=Data[sample.loc,]
         Lnorm = function(x) sqrt(sum(t(x)*x))# Euclidean distance, but reader can define different distance such as max(abs(x)) and sum(abs(x)) 
@@ -201,19 +197,16 @@ SimulationData<-function(){
       
       RE.g[r1,r2]=C1/loop.time;RE.m[r1,r2]=C2/loop.time
     }
-  
-  # RE.g
-  # RE.m
-  
 
+  
   saveRDS(RE.g, "REg2.rds")
   saveRDS(RE.m, "REm2.rds") 
   ##########end of simulation2
   
   ######simulation3
-  set.seed(1) 
+  set.seed(3) 
   #simulations for comparisons
-  D=c(150);sigma=c(1:10)*0.1;loop.time=100;
+  D=c(300);sigma=c(1:10)*0.1;loop.time=100;
   RE.g=RE.m=matrix(NA,length(D),length(sigma))
   for(r1 in 1:length(D))
     for(r2 in 1:length(sigma)){
@@ -223,8 +216,8 @@ SimulationData<-function(){
       for(loop in 1:loop.time){
         Data=NULL
         for(i in 1:20) Data=rbind(Data,0+10*pnorm(-4+0.05*c(1:d))+rnorm(d,0,s.e))#
-        for(i in 1:100) Data=rbind(Data,c(rep(0,50),20*pnorm(-3+0.03*c(1:(d-50)))+rnorm(d-50,0,s.e)))
-        for(i in 1:200) Data=rbind(Data,c(rep(0,100),5*pnorm(-2+0.07*c(1:(d-100)))+rnorm(d-100,0,s.e)))
+        for(i in 1:100) Data=rbind(Data,c(rep(0,100),20*pnorm(-3+0.03*c(1:(d-100)))+rnorm(d-100,0,s.e)))
+        for(i in 1:200) Data=rbind(Data,c(rep(0,200),5*pnorm(-2+0.07*c(1:(d-200)))+rnorm(d-200,0,s.e)))
         sample.loc=sample(dim(Data)[1])
         Data=Data[sample.loc,]
         Lnorm = function(x) sqrt(sum(t(x)*x))# Euclidean distance, but reader can define different distance such as max(abs(x)) and sum(abs(x)) 
@@ -270,9 +263,6 @@ SimulationData<-function(){
       
       RE.g[r1,r2]=C1/loop.time;RE.m[r1,r2]=C2/loop.time
     }
-  
-  # RE.g
-  # RE.m
   
   
   saveRDS(RE.g, "REg3.rds")
